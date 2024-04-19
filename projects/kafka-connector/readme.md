@@ -44,7 +44,7 @@ insert into product (name, price) values ("carrot", 10000);
 ```bash
 kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
-![img.png](kafka-topic-list.png)
+![kafka-topics.png](kafka-topics.png)
 
 ### 카프카 토픽 데이터 확인
 ```bash
