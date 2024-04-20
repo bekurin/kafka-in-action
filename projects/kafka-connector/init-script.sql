@@ -9,12 +9,13 @@ drop table if exists product_history;
 
 CREATE TABLE product (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NULL,
-    price DECIMAL(10,0) NULL
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,0) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE product_history (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NULL,
-    price DECIMAL(10,0) NULL
+    product_id INT NOT NULL ,
+    name VARCHAR(100) NOT NULL ,
+    price DECIMAL(10,0) NOT NULL
 ) ENGINE=InnoDB;
