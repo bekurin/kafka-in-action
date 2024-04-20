@@ -78,7 +78,7 @@ insert into product (name, price) values ("carrot", 10000);
 ```bash
 kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
-![kafka-topics.png](kafka-topics.png)
+![kafka-topics.png](images/kafka-topics.png)
 
 ### 10. 카프카 토픽 데이터 확인
 ```bash
@@ -94,7 +94,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic mysql.cdc.pr
 ```
 
 ## 마무리
-![kafka-connect-result.png](kafka-connect-result.png)
+![kafka-connect-result.png](images/kafka-connect-result.png)
 
 insert, update 시에 데이터가 잘 적재되고, 데이터 삭제 시에는 row가 추가되지 않는다.
 
