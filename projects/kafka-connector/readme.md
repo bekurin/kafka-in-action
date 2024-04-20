@@ -113,3 +113,4 @@ KafkaSchemaHistory를 생성할 수 있도록 source-connector에 설정 값 추
 - https://docs.confluent.io/kafka-connectors/jdbc/current/sink-connector/sink_config_options.html
 - https://github.dev/debezium/debezium/debezium/debezium/debezium-core/src/main/java/io/debezium/transforms/ExtractNewRecordState.java
 - https://debezium.io/documentation/reference/stable/connectors/mysql.html#mysql-example-configuration
+- https://docs.confluent.io/platform/current/connect/transforms/replacefield.html#replacefield
