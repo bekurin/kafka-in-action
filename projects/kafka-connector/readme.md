@@ -109,6 +109,14 @@ KafkaSchemaHistory를 생성할 수 있도록 source-connector에 설정 값 추
 "schema.history.internal.kafka.topic": "schema-changes",
 ```
 
+### 필드의 이름이 변경되는 경우 insert가 제대로 이뤄지지 않음
+sink connector 구현 시에 아래와 같이 ReplaceField$Value 구현체를 사용하여 after 객체 내부에 저장된 필드 이름을 변경 
+```
+"transforms": "RenameProductId",
+"transforms.RenameProductId.type": "org.apache.kafka.connect.transforms.ReplaceField$Value",
+"transforms.RenameProductId.renames": "id:product_id"
+```
+
 ## 참고 문헌
 - https://docs.confluent.io/kafka-connectors/jdbc/current/sink-connector/sink_config_options.html
 - https://github.dev/debezium/debezium/debezium/debezium/debezium-core/src/main/java/io/debezium/transforms/ExtractNewRecordState.java
